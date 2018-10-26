@@ -1,5 +1,6 @@
 import math
 
+
 def generator_fibonacci():
     """
     Returns a generator of Fibonacci Numbers
@@ -8,6 +9,7 @@ def generator_fibonacci():
     while True:
         n_1, n_2 = n_2, n_1 + n_2
         yield n_2
+
 
 def is_prime(n):
     """
@@ -24,3 +26,11 @@ def is_prime(n):
             if n % i == 0:
                 return False
         return True
+
+
+def is_palindrome(x):
+    """
+    check whether a string is palindrome
+    :return: bool
+    """
+    return x == x[::-1]
