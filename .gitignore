@@ -94,6 +94,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.vs/
 
 # Spyder project settings
 .spyderproject
@@ -112,6 +113,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Python
+*.py~ 
+*.py.un~
 
 #Haskell 
 dist
@@ -132,6 +137,8 @@ cabal.sandbox.config
 *.hp
 *.eventlog
 *.hs.un~
+*.hs~
+*hs.swap
 .stack-work/
 cabal.project.local
 cabal.project.local~
