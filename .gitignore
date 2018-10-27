@@ -138,7 +138,7 @@ cabal.sandbox.config
 *.eventlog
 *.hs.un~
 *.hs~
-*hs.swap
+*hs.swp
 .stack-work/
 cabal.project.local
 cabal.project.local~
