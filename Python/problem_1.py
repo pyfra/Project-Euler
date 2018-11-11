@@ -1,4 +1,5 @@
 import math
+
 def sum_multiple(m, treshold):
     """
     Returns the sum of the multiple of n until the treshold (not included)
