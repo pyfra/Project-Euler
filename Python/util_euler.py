@@ -1,5 +1,5 @@
 import math
-
+from math import gcd
 
 def generator_fibonacci():
     """
@@ -9,7 +9,6 @@ def generator_fibonacci():
     while True:
         n_1, n_2 = n_2, n_1 + n_2
         yield n_2
-
 
 def is_prime(n):
     """
@@ -27,10 +26,13 @@ def is_prime(n):
                 return False
         return True
 
-
 def is_palindrome(x):
     """
     check whether a string is palindrome
     :return: bool
     """
     return x == x[::-1]
+
+def lcm(a, b):
+    """Compute the lowest common multiple of a and b"""
+    return a * b // gcd(a, b)
