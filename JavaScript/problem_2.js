@@ -25,4 +25,4 @@ function euler2(limit){
     return sum
 
 }    
-console.log(euler2(4000000))
+console.log(euler2(4000000));

@@ -4,7 +4,7 @@ function isPrime (num) {
     return num > 1;
 }
 
-function maxPrimeDivisor(num){
+function euler3(num){
     for (var i = num; i >= 0; i--) {
 	if ((num % i === 0) && (isPrime(i))){
         return i;
@@ -13,4 +13,4 @@ function maxPrimeDivisor(num){
 }
 
 //console.log(maxPrimeDivisor(600851475143));
-console.log(maxPrimeDivisor(600851475143));
+console.log(euler2(600851475143));
