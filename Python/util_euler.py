@@ -16,12 +16,12 @@ def is_prime(n):
     :param n: the number to check
     :return: Boolean (if True, then n is a prime)
     """
-    if n <= 1:
+    if n <= 1: 
         return False
-    elif n in (2,3) or n % 2 == 0:
+    elif n in (2,3):
         return True
     else:
-        for i in range(3, math.floor(math.sqrt(n)), 2):
+        for i in range(2, math.floor(math.sqrt(n)) + 1):
             if n % i == 0:
                 return False
         return True
