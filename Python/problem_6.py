@@ -7,6 +7,5 @@ def squared_sum(n):
 def diff_sums(n):
     return squared_sum(n) - sum_of_squares(n)
 
-if __name__ == "__main__":
-    n = 100
-    print(diff_sums(n))
+n = 100
+print(diff_sums(n))

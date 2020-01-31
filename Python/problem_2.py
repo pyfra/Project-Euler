@@ -8,3 +8,5 @@ while n_seq <= 4 * 10**6:
     if n_seq % 2 == 0:
         result += n_seq
 
+print(result)
+

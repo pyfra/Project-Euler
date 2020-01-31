@@ -18,3 +18,4 @@ def get_max_prime(num):
         return num
 
 result = get_max_prime(TARGET_NUMBER)
+print(result)

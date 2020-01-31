@@ -19,3 +19,4 @@ result = sum((x for x in range(3,1000, 3))) + sum((x for x in range(5,1000, 5) i
 
 # assertation to make sure that the result is the same as before
 assert (result_2 - result) == 0.0
+print(result)
