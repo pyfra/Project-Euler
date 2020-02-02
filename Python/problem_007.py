@@ -1,10 +1,5 @@
-from util_euler import is_prime
+from util_euler import is_prime, infinite_number_generator
 
-def infinite_number_generator(step=2):
-    n = 0
-    while True:
-        n += step
-        yield n
 
 def get_nth_prime(n):
     counter = 0
