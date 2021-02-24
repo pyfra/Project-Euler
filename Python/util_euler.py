@@ -1,5 +1,5 @@
 import math
-from math import gcd
+from math import gcd, sqrt, floor
 
 
 def generator_fibonacci():
@@ -10,6 +10,28 @@ def generator_fibonacci():
     while True:
         n_1, n_2 = n_2, n_1 + n_2
         yield n_2
+
+
+def get_max_prime(num):
+    """
+    Computes the max prime of a given number num.
+    """
+    if num == 1:
+        return 1
+
+    while num % 2 == 0:
+        num //= 2
+
+    if num == 1:
+        return 2
+
+    for x in range(3, floor(sqrt(num)) + 1, 2):
+        while num % x == 0:
+            num //= x
+        if num == 1:
+            return x
+    else:
+        return num
 
 
 def is_prime(n):
