@@ -98,7 +98,7 @@ class InfinitePrimeGenerator:
                 while not (is_prime(next_num)):
                     next_num = next(gen_numbers)
                 self._primes.append(next_num)
-                return (next_num)
+                return next_num
             else:
                 return self._primes[self._counter]
 

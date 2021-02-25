@@ -10,5 +10,6 @@ def highest_adjacent_product(n, grid):
 
     return max_prod
 
+
 result = highest_adjacent_product(13, grid)
 print(result)

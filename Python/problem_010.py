@@ -8,6 +8,7 @@ def sum_of_primes_below(n):
             sum_primes += i
     return sum_primes
 
-result = sum_of_primes_below(2*10**6)
-sum_of_primes_below(2*10**6)
+
+result = sum_of_primes_below(2 * 10 ** 6)
+sum_of_primes_below(2 * 10 ** 6)
 print(result)
